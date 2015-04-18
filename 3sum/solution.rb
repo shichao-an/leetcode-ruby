@@ -10,7 +10,7 @@ class Solution
       while left < right
         s = num[i] + num[left] + num[right]
         if s == 0
-          res.push [num[i], num[left], num[right]]
+          res.push([num[i], num[left], num[right]])
           left += 1
           right -= 1
           left += 1 while left < right && num[left] == num[left - 1]
@@ -27,4 +27,4 @@ class Solution
 end
 
 s = Solution.new
-p s.threeSum [-1, -3, 0, 1, 3, 5, 2]
+p s.threeSum([-1, -3, 0, 1, 3, 5, 2])

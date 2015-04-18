@@ -25,5 +25,5 @@ end
 num = [-4, 2, 4, 6, 11]
 target = 14
 s = Solution.new
-res = s.threeSumClosest num, target
+res = s.threeSumClosest(num, target)
 puts res
