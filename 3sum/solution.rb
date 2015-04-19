@@ -1,6 +1,5 @@
 def three_sum(num)
   num.sort!
-  p num
   res = []
   (0..num.length - 3).each do |i|
     next unless i == 0 || i > 0 && num[i - 1] != num[i]
@@ -24,4 +23,5 @@ def three_sum(num)
   res
 end
 
+p num
 p three_sum([-1, -3, 0, 1, 3, 5, 2])
