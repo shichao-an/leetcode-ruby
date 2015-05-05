@@ -1,4 +1,15 @@
-def level_order(root)
+# Definition for a binary tree node.
+# class TreeNode
+#     attr_accessor :val, :left, :right
+#     def initialize(val)
+#         @val = val
+#         @left, @right = nil, nil
+#     end
+# end
+
+# @param {TreeNode} root
+# @return {Integer[][]}
+def level_order_bottom(root)
   res = []
   return res if root.nil?
   queue = []
@@ -17,5 +28,5 @@ def level_order(root)
       queue.push(root.right) unless root.right.nil?
     end
   end
-  res
+  res.reverse!
 end
