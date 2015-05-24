@@ -10,7 +10,6 @@ def combine_helper(a, k)
   return [[]] if k == 0
   res = []
   a.each_with_index do |e, i|
-    p e
     rest_comb = combine_helper(a[i + 1..-1], k - 1)
     rest_comb.each do |comb|
       comb.unshift(e)
